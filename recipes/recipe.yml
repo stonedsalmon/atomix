@@ -31,8 +31,8 @@ modules:
         - faugus/faugus-launcher
         - sneexy/zen-browser
         - yalter/niri
-        enable:
-          - terra
+       enable:
+        - terra
     install:
       packages:
         - micro
