@@ -58,7 +58,7 @@ modules:
         - lgl-emoji-picker
         - lgl-dnf-helper
         - niri
-        - sdm
+        - sddm
     remove:
       packages: 
         - lutris
@@ -75,7 +75,7 @@ modules:
         - mariadb-cracklib-password-check
         - mariadb-gssapi-server
   # Bazaar storefront (replaced by plasma-discover) + its KRunner plugin
-  #- bazaar
+        #- bazaar
         - krunner-bazaar
   # KDE Connect
         #- kde-connect
