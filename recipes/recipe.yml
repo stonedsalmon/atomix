@@ -21,16 +21,81 @@ modules:
     repos:
       copr:
         - atim/starship
+        - lionheartp/Hyprland
+        - linuxgamerlife/lgl-dnf-helper
+        - linuxgamerlife/lgl-emoji-picker
+        - linuxgamerlife/lgl-vm-curator
+        - linuxgamerlife/lgl-cliamp
+        - theblackdon/dcli-bootc
+        - imput/helium
+        - faugus/faugus-launcher
+        - sneexy/zen-browser
+        - yalter/niri
+        enable:
+          - terra
+        import_keys:
+          - /etc/pki/rpm-gpg/RPM-GPG-KEY-terra44
+
+      remote_rpms:
+          - url: https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm
     install:
       packages:
         - micro
         - starship
+        - btop
+        - htop
+        - git
+        - eza
+        - zoxide
+        - gh
+        #- zen-browser
+        - zed
+        - helium-bin
+        - haruna
+        - faugus-launcher
+        - noctalia-git
+        - qt5ct
+        - qt6ct
+        - lgl-cliamp
+        - nwg-look
+        - adw-gtk3-theme
+        - kitty
+        - lgl-emoji-picker
+        - lgl-dnf-helper
+        - niri
+        - sdm
     remove:
-      packages: []
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        #- firefox
-        #- firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      packages: 
+        - lutris
+        - waydroid
+        - waydroid-selinux
+        - input-remapper
+        - mariadb
+        - mariadb-server
+        - mariadb-common
+        - mariadb-errmsg
+        - mariadb-connector-c
+        - mariadb-connector-c-config
+        - mariadb-backup
+        - mariadb-cracklib-password-check
+        - mariadb-gssapi-server
+  # Bazaar storefront (replaced by plasma-discover) + its KRunner plugin
+  #- bazaar
+        - krunner-bazaar
+  # KDE Connect
+        #- kde-connect
+        #- kdeconnectd
+        #- kde-connect-libs
+  # ROM Properties (rp-config)
+        - rom-properties
+        - rom-properties-common
+        - rom-properties-kf6
+        - rom-properties-utils
+  # Bazzite system updater
+        - uupd
+        - topgrade
+  # Bazzite Portal (yafti welcome app)
+        - bazzite-portal
 
   - type: default-flatpaks
     configurations:
