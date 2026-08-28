@@ -19,6 +19,8 @@ modules:
 
   - type: dnf
     repos:
+     enable:
+      - terra
       copr:
         - atim/starship
         - lionheartp/Hyprland
@@ -31,8 +33,6 @@ modules:
         - faugus/faugus-launcher
         - sneexy/zen-browser
         - yalter/niri
-       enable:
-        - terra
     install:
       packages:
         - micro
