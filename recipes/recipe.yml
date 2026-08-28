@@ -33,11 +33,6 @@ modules:
         - yalter/niri
         enable:
           - terra
-        import_keys:
-          - /etc/pki/rpm-gpg/RPM-GPG-KEY-terra44
-
-      remote_rpms:
-          - url: https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-44.noarch.rpm
     install:
       packages:
         - micro
